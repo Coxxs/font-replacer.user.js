@@ -1,6 +1,6 @@
 # font-replacer.user.js
 
-Replace fonts hard coded in CSS by websites.
+Replace fonts hard coded by websites.
 
 **You have to edit this userscript and set the font you want to replace (or change replace rules).**
 
