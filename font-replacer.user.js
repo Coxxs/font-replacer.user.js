@@ -67,7 +67,7 @@ const SourceHanSans = [
   { name: 'Source Han Sans SC' },
 ]
 
-const to = HarmonyOSSans
+const to = SourceHanSans
 replacer.add("宋体", to)
 replacer.add("SimSun", to)
 replacer.add("新宋体", to)
