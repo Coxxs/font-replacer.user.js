@@ -3,7 +3,7 @@
 // @name:zh-CN  字体替换 (Font replacer)
 // @name:zh-TW  字型替換 (Font replacer)
 // @namespace   font-replacer
-// @grant       none
+// @grant       GM_addStyle
 // @version     1.0
 // @author      Coxxs
 // @description Replace fonts hard coded by websites
@@ -13,24 +13,6 @@
 // @license     MIT
 // @run-at      document-start
 // ==/UserScript==
- 
-function addStyle(css) {
-  const _insertStyle = (css) => {
-    let style = document.createElement("style")
-    style.innerHTML = css
-    document.head.prepend(style)
-  }
-  if (document.head) {
-    _insertStyle(css)
-  } else {
-    const observer = new MutationObserver((mutations, observer) => {
-      if (!document.head) return
-      _insertStyle(css)
-      observer.disconnect()
-    })
-    observer.observe(document.documentElement, { childList: true, subtree: true })
-  }
-}
  
 class Replacer {
   constructor() {
@@ -107,4 +89,4 @@ replacer.add("MingLiU", FontTC)
 
 /**** Replace rules END *****/
  
-addStyle(replacer.toString())
+GM_addStyle(replacer.toString())
