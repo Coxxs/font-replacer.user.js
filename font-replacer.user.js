@@ -1,10 +1,14 @@
 // ==UserScript==
 // @name        Font replacer
+// @name:zh-CN  字体替换 (Font replacer)
+// @name:zh-TW  字型替換 (Font replacer)
 // @namespace   font-replacer
 // @grant       none
 // @version     1.0
 // @author      Coxxs
 // @description Replace fonts hard coded by websites
+// @description:zh-cn 替换网站硬编码在 CSS 中的字体
+// @description:zh-tw 替換網站寫死在 CSS 中的字型
 // @include     *
 // @license     MIT
 // @run-at      document-start
