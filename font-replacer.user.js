@@ -38,7 +38,7 @@ class Replacer {
   }
   add(from, to) {
     for (const font of to) {
-      let extra = []
+      let extra = ''
       if (font.weight) {
         extra += `font-weight:${font.weight};`
       }
