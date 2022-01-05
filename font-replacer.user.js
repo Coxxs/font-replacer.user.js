@@ -42,7 +42,7 @@ class Replacer {
       if (font.weight) {
         extra += `font-weight:${font.weight};`
       }
-      this.css.push(`@font-face{font-family:"${from}";${extra}src:local("${font['name']}")}`)}
+      this.css.push(`@font-face{font-family:"${from}";${extra}src:local("${font.name}")}`)}
     }
   toString() {
     return this.css.join('')
