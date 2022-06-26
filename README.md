@@ -9,11 +9,15 @@ Replace fonts hard coded by websites.
 
 **You may want to edit this userscript and change replace rules.**
 
-Due to a bug in Chrome for Windows, if the new font does not appear, please **uninstall your custom font** from Windows and **choose "Install for all users" when reinstalling the font** (Show more options -> Install for all users).
-
 By default, it will replace common Chinese fonts to "Source Han Sans".
 
-Tip: For websites that didn't hard-coded fonts, you can modify the fonts directly in your browser settings (e.g. chrome://settings/fonts) or use [extensions](https://chrome.google.com/webstore/detail/advanced-font-settings/caclkomlalccbpcdllchkeecicepbmbm).
+## If it doesn't work...
+
+- This plugin will not work for websites that didn't hard-coded fonts, you can modify the fonts directly in your browser settings (e.g. `chrome://settings/fonts`) or use [extensions](https://chrome.google.com/webstore/detail/advanced-font-settings/caclkomlalccbpcdllchkeecicepbmbm).
+
+- Due to a bug in Chrome for Windows, font replace won't work if the font is installed in the user directory.
+  1. Please **uninstall your custom font** from Windows (Required)
+  2. Choose **"Install for all users" when reinstalling the font** (Show more options -> Install for all users).
 
 ----
 **[zh-TW]**
